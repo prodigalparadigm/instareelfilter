@@ -1,0 +1,39 @@
+# Secrets, cookies, sessions - never commit credentials
+*.cookies
+cookies.txt
+*.session
+*.token
+.env
+.env.*
+*.pem
+
+# Downloaded media - nothing produced from someone else's reel gets committed
+*.mp4
+*.mov
+*.webm
+*.m4a
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+frame-*.jpg
+
+# Pipeline working files and outputs
+reel-to-skill/
+inbox/
+archive/
+caption.txt
+transcript.txt
+*.info.json
+triage-log.md
+
+# Whisper models and caches
+models/
+*.mlx
+.cache/
+huggingface/
+
+# OS
+.DS_Store
